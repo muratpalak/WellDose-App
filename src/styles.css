@@ -137,3 +137,48 @@ h1,h2,h3,p{margin-top:0}
 @media(max-width:850px){.auth-shell{grid-template-columns:1fr}.auth-side{min-height:300px;padding:28px 30px}.auth-story{margin:40px 0 10px}.auth-story h1{font-size:39px;letter-spacing:-2px;margin:12px 0}.auth-story p{font-size:13px;line-height:1.6}.auth-points{font-size:10px;gap:10px}.auth-card-wrap{padding:38px 20px 70px}.sidebar{display:none}.topbar{height:63px;padding:0 22px}.mobile-brand{display:block}.content{padding:35px 19px 105px}.mobile-nav{display:grid;grid-template-columns:repeat(4,1fr);position:fixed;bottom:0;left:0;right:0;background:#fff;box-shadow:0 -10px 30px #19352213;z-index:10;padding-bottom:env(safe-area-inset-bottom)}.mobile-nav button{border:0;background:#fff;padding:11px 2px;display:flex;align-items:center;flex-direction:column;gap:4px;color:#93a89a}.mobile-nav button.active{color:#28694f}.mobile-nav button span{font-size:22px}.mobile-nav button small{font-size:10px;font-weight:700}.page-title{align-items:flex-start;flex-wrap:wrap}.consent-card{padding:28px}.consent-card h1{font-size:30px}}
 @media(max-width:490px){.stats-grid{gap:10px}.stat{padding:16px;min-height:175px}.stat strong{font-size:22px}.auth-story h1{font-size:35px}.auth-card h2{font-size:30px}.panel{padding:21px}.topbar-right{font-size:10px}.connection-line{align-items:flex-start;flex-wrap:wrap}.connection-line .pending{margin-left:auto}.auth-foot{flex-direction:column;gap:5px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{scroll-behavior:auto!important;transition-duration:.01ms!important}}
+
+/* WellDose | Sağlık Belgeleri */
+.document-categories{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 20px}
+.document-category{display:flex;flex-direction:column;align-items:flex-start;text-align:left;gap:8px;min-height:122px;padding:19px;border:1px solid #e4ebe5;background:#fff;border-radius:16px;box-shadow:0 8px 24px #1d543408;transition:background .2s,border-color .2s}
+.document-category:hover{background:#f2f8f2;border-color:#a6ceaf}
+.document-category.active{border-color:#45826a;background:#e9f5ed;box-shadow:inset 0 0 0 1px #45826a}
+.document-category-icon{font-size:22px;line-height:1.1;color:#447d62}
+.document-category strong{color:#2b5440;font-size:13px;line-height:1.3}
+.document-category small{color:#8ba797;font-size:11px}
+.document-layout{display:grid;grid-template-columns:minmax(300px,420px) minmax(0,1fr);gap:20px;align-items:start}
+.document-layout-full{grid-template-columns:minmax(0,1fr)}
+.document-layout .panel h2{margin-bottom:23px}
+.document-locked-category{display:flex;flex-direction:column;gap:7px;background:#edf6ef;border:1px solid #d9e8dc;border-radius:12px;padding:14px 16px}
+.document-locked-category span{font-size:12px;color:#789380;font-weight:700}
+.document-locked-category strong{color:#2b5740;font-size:15px}
+.document-locked-category small{color:#829f8b;font-size:11px}
+.document-layout input[type=file]{background:#f8faf8;padding:12px;cursor:pointer;font-size:12px;max-width:100%;min-width:0}
+.document-layout input[type=file]::file-selector-button{border:0;background:#e7f2ea;color:#34644e;border-radius:8px;padding:9px 13px;margin-right:12px;font-size:12px;font-weight:800;cursor:pointer}
+.document-existing-file{background:#f7faf7;color:#637f6c;border-radius:9px;padding:11px 12px;font-size:12px;line-height:1.5;overflow-wrap:anywhere;margin:0}
+.upload-progress{border:1px solid #d1e7d9;background:#f0f8f2;padding:14px;border-radius:12px;margin:6px 0}
+.upload-progress[hidden]{display:none}
+.upload-progress-caption{display:flex;align-items:center;justify-content:space-between;gap:14px;color:#3b6c50;font-size:12px;margin-bottom:10px}
+.upload-progress-caption strong{font-variant-numeric:tabular-nums}
+.upload-progress progress{display:block;width:100%;height:12px;border:0;border-radius:12px;overflow:hidden;accent-color:#4d9673}
+.upload-progress progress::-webkit-progress-bar{background:#d9e9de;border-radius:12px}
+.upload-progress progress::-webkit-progress-value{background:#4d9673;border-radius:12px;transition:width .18s}
+.document-list{max-height:800px;overflow:auto}
+.document-item{padding:21px 0;border-bottom:1px solid #ecf0eb}
+.document-item:first-child{padding-top:0}
+.document-item:last-child{border-bottom:0}
+.document-item-head{display:flex;gap:13px;align-items:flex-start}
+.document-item-head>div{min-width:0;flex:1}
+.document-type-icon{width:42px;height:42px;display:grid;place-items:center;flex-shrink:0;border-radius:11px;background:#edf5ef;font-size:21px}
+.document-item-head strong{display:block;font-size:14px;color:#2e5842;overflow-wrap:anywhere}
+.document-item-head small{display:block;color:#91a695;font-size:11px;margin-top:5px;line-height:1.6}
+.document-by{color:#718b78;font-size:12px;margin:11px 0 0}
+.document-note{font-size:13px;line-height:1.7;color:#657e6f;margin:14px 0 3px;white-space:pre-wrap;overflow-wrap:anywhere}
+.document-actions{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-top:15px;flex-wrap:wrap}
+.document-actions .secondary-button{max-width:100%;text-align:left;white-space:normal;overflow-wrap:anywhere}
+.document-delete{padding:10px 14px;border-radius:9px;border:1px solid #eed7d2;background:#fff9f7;color:#a4564b;font-size:12px;font-weight:800;margin-left:auto}
+.document-delete:hover{background:#ffe9e3}
+.note-only-tag{font-size:11px;border-radius:20px;background:#eef2ee;padding:8px 11px;color:#73947a}
+@media(max-width:1100px){.document-categories{grid-template-columns:repeat(3,minmax(0,1fr))}.document-layout{grid-template-columns:1fr}}
+@media(max-width:850px){.mobile-nav{grid-template-columns:repeat(5,1fr)}.mobile-nav button small{font-size:9px}.document-categories{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}.document-category{min-height:110px;padding:15px}.document-layout .panel{padding:22px}}
+@media(max-width:490px){.document-category strong{font-size:12px}.document-category-icon{font-size:20px}.document-category small{font-size:10px}.document-layout{grid-template-columns:minmax(0,1fr)}.document-actions .secondary-button{font-size:11px}}
